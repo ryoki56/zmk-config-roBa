@@ -11,30 +11,30 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
+  - {t: A, h: LEFT SHIFT}
+  - {t: S, h: LEFT SHIFT}
   - D
   - F
   - G
   - ''
-  - '-'
+  - ;
   - H
   - J
   - K
   - L
   - ENTER
-  - {t: Z, h: LEFT SHIFT}
-  - X
+  - {t: Z, h: LEFT CONTROL}
+  - {t: X, h: LEFT CONTROL}
   - C
   - V
   - B
+  - ESCAPE
   - ','
-  - ;
-  - ':'
+  - .
   - N
   - M
-  - .
   - /
+  - '-'
   - LCTRL
   - LEFT WIN
   - LEFT ALT
