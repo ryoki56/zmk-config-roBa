@@ -4,12 +4,12 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // OS設定を日本語キーボードのまま使用するための変換定義
-
+// これを使うとkeymapeditorからauto buildできなくなっちゃうので使わない
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
 #define JP_EQUAL        UNDER             // =
-#define JP_CARET        EQUAL             // ^k
+#define JP_CARET        EQUAL             // ^
 #define JP_YEN          0x89              // ¥
 #define JP_PLUS         COLON             // +
 #define JP_TILDE        PLUS              // ~
@@ -117,19 +117,19 @@
 
         FUNCTION {
             bindings = <
-&trans      &trans  &trans  &kp JP_LBRACE   &kp JP_RBRACE                       &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&kp ESCAPE  &trans  &trans  &kp JP_LPAREN   &kp JP_RPAREN   &trans      &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans      &trans  &trans  &kp JP_LBRACKET &kp JP_RBRACKET &trans      &trans  &kp F11  &kp F12  &trans  &trans  &trans
-&trans      &trans  &trans  &trans          &trans          j&trans      &trans  &trans                            &trans
+&trans      &trans  &trans  &kp RIGHT_BRACE    &kp PIPE                                   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+&kp ESCAPE  &trans  &trans  &kp ASTERISK       &kp LEFT_PARENTHESIS   &trans      &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&trans      &trans  &trans  &kp RIGHT_BRACKET  &kp BACKSLASH          &trans      &trans  &kp F11  &kp F12  &trans  &trans  &trans
+&trans      &trans  &trans  &trans             &trans                 &trans      &trans  &trans                            &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PARCENT                                               &kp JP_QUOTE      &kp JP_DQUOTE      &kp JP_AT        &kp JP_TILDE          &kp PERCENT
-&kp LEFT_SHIFT   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans      &kp JP_BACKQUOTE  &kp SEMICOLON      &kp JP_COLON     &kp HASH              &kp JP_UNDERSCORE
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp JP_EQUAL     &trans                       &kp DOLLAR  &kp JP_CARET      &kp EXCLAMATION    &kp JP_AMPERSAND &kp JP_PIPE           &kp JP_YEN
-&trans           &trans           &trans           &trans           &trans           &trans                       &trans      &trans                                                                     &kp PIPE
+&trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PARCENT                                                 &kp AMPERSAND   &kp AT            &kp LEFT_BRACKET   &kp PLUS       &kp PERCENT
+&kp LEFT_SHIFT   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &kp LC(LA(KP_NUMBER_0))      &trans      &kp LEFT_BRACE  &kp SEMICOLON     &kp SINGLE_QUOTE   &kp HASH       &kp LS(0x87)
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UNDER          &trans                       &kp DOLLAR  &kp EQUAL       &kp EXCLAMATION   &kp CARET          &kp LS(0x89)   &kp 0x89
+&trans           &trans           &trans           &trans           &trans             &trans                       &trans      &trans                                                              &kp PIPE
             >;
         };
 
