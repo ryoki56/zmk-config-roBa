@@ -29,6 +29,8 @@ settings_reset-seeeduino_xiao_ble-zmk.uf2は[ここ](https://zmk.dev/docs/troubl
 
 ## key-map
 
+<img src="keymap_image/function.png">
+<img src="keymap_image/num.png">
 <img src="keymap-drawer/roBa.svg" >
 
 
