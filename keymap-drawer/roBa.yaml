@@ -40,16 +40,16 @@ layers:
   - LEFT ALT
   - {t: '&to_layer_0 TAB', h: SCROLL}
   - {t: '&to_layer_0 SPACE', h: ARROW}
-  - {t: '&to_layer_0 LA(LS(N0))', h: NUM}
-  - {t: '&to_layer_0 LS(LA(N1))', h: FUNCTION}
+  - {t: '&to_layer_0 INTERNATIONAL_5', h: NUM}
+  - {t: '&to_layer_0 INTERNATIONAL_4', h: FUNCTION}
   - BACKSPACE
   - {t: '&to_layer_0 DELETE', h: '6'}
   FUNCTION:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '{'
   - '}'
+  - '|'
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -57,9 +57,9 @@ layers:
   - F5
   - ESCAPE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '*'
   - (
-  - )
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F6
@@ -69,9 +69,9 @@ layers:
   - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
   - ']'
+  - \
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F11
@@ -90,38 +90,38 @@ layers:
   - {t: ▽, type: trans}
   NUM:
   - {t: ▽, type: trans}
-  - KP 7
-  - KP 8
-  - KP 9
-  - +
-  - ''''
-  - '"'
+  - '7'
+  - '8'
+  - '9'
+  - ':'
+  - '&'
   - '@'
-  - '~'
-  - '='
+  - '['
+  - +
+  - _
   - LEFT SHIFT
-  - KP 4
-  - KP 5
-  - KP 6
+  - '4'
+  - '5'
+  - '6'
   - '-'
   - Ctl+Alt+KP 0
   - '%'
-  - '`'
+  - '{'
   - ;
-  - ':'
+  - ''''
   - '#'
-  - _
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
-  - '*'
+  - Sft+INTERNATIONAL 1
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '"'
   - /
   - $
-  - ^
+  - '='
   - '!'
-  - '&'
-  - '|'
+  - ^
+  - Sft+INTERNATIONAL 3
   - INT YEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -131,7 +131,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - \
+  - {t: ▽, type: trans}
   ARROW:
   - ESCAPE
   - Ctl+Sft+TAB
