@@ -97,9 +97,9 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp L         &kp O         &kp COMMA               &kp DOT                                                                                 &kp F      &kp W  &kp R  &kp Y  &kp P
-&kp E    &kp U         &kp I         &kp A                   &kp MINUS       &none                                 &kp FSLH                          &kp K      &kp T  &kp N  &kp S  &kp H
-&kp Z    &kp X         &kp C         &kp V                   &kp SEMI        &lt_to_layer_0 3 INTERNATIONAL_5      &lt_to_layer_0 1 INTERNATIONAL_4  &kp G      &kp D  &kp M  &kp J  &kp B
+&kp Q    &kp L         &kp O         &kp COMMA               &kp DOT                                                                                 &kp P      &kp M  &kp Y  &kp R  &kp W
+&kp E    &kp U         &kp I         &kp A                   &kp MINUS       &none                                 &kp FSLH                          &kp H      &kp N  &kp T  &kp S  &kp K
+&kp Z    &kp X         &kp C         &kp V                   &kp SEMI        &lt_to_layer_0 3 INTERNATIONAL_5      &lt_to_layer_0 1 INTERNATIONAL_4  &kp B      &kp F  &kp D  &kp J  &kp G
 &kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 SPACE  &kp LEFT_SHIFT  &kp LCTRL                             &kp BACKSPACE                     &kp ENTER                       &lt_to_layer_0 6 DELETE
             >;
 
