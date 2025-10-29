@@ -6,11 +6,11 @@ layers:
   - O
   - ','
   - .
-  - F
-  - W
-  - R
-  - Y
   - P
+  - M
+  - Y
+  - R
+  - W
   - E
   - U
   - I
@@ -18,11 +18,11 @@ layers:
   - '-'
   - ''
   - /
-  - K
-  - T
-  - N
-  - S
   - H
+  - N
+  - T
+  - S
+  - K
   - Z
   - X
   - C
@@ -30,11 +30,11 @@ layers:
   - ;
   - {t: '&to_layer_0 INTERNATIONAL_5', h: ARROW}
   - {t: '&to_layer_0 INTERNATIONAL_4', h: FUNCTION}
-  - G
-  - D
-  - M
-  - J
   - B
+  - F
+  - D
+  - J
+  - G
   - TAB
   - LEFT WIN
   - LEFT ALT
