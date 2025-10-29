@@ -2,47 +2,47 @@ layout: {zmk_keyboard: roBa}
 layers:
   default:
   - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: A, h: LEFT SHIFT}
-  - {t: S, h: LEFT SHIFT}
-  - D
-  - F
-  - G
-  - ''
-  - ;
-  - H
-  - J
-  - K
   - L
-  - ENTER
-  - {t: Z, h: LEFT CONTROL}
-  - {t: X, h: LEFT CONTROL}
-  - C
-  - V
-  - B
-  - ESCAPE
+  - O
   - ','
   - .
-  - N
-  - M
-  - /
+  - F
+  - W
+  - R
+  - Y
+  - P
+  - E
+  - U
+  - I
+  - A
   - '-'
-  - LCTRL
+  - ''
+  - /
+  - K
+  - T
+  - N
+  - S
+  - H
+  - Z
+  - X
+  - C
+  - V
+  - ;
+  - {t: '&to_layer_0 INTERNATIONAL_5', h: ARROW}
+  - {t: '&to_layer_0 INTERNATIONAL_4', h: FUNCTION}
+  - G
+  - D
+  - M
+  - J
+  - B
+  - TAB
   - LEFT WIN
   - LEFT ALT
-  - {t: '&to_layer_0 TAB', h: SCROLL}
-  - {t: '&to_layer_0 SPACE', h: ARROW}
-  - {t: '&to_layer_0 INTERNATIONAL_5', h: NUM}
-  - {t: '&to_layer_0 INTERNATIONAL_4', h: FUNCTION}
+  - {t: '&to_layer_0 SPACE', h: NUM}
+  - LEFT SHIFT
+  - LCTRL
   - BACKSPACE
+  - ENTER
   - {t: '&to_layer_0 DELETE', h: '6'}
   FUNCTION:
   - {t: ▽, type: trans}
@@ -73,7 +73,7 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - F11
   - F12
   - {t: ▽, type: trans}
@@ -85,7 +85,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
@@ -104,7 +104,7 @@ layers:
   - '5'
   - '6'
   - '-'
-  - Ctl+Alt+KP 0
+  - Gui+Sft+S
   - '%'
   - '{'
   - ;
@@ -126,9 +126,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -160,18 +160,18 @@ layers:
   - {t: ▽, type: trans}
   - Gui+RIGHT ARROW
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -258,7 +258,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -313,9 +313,5 @@ combos:
   k: TAB
 - p: [12, 13]
   k: Sft+TAB
-- p: [11, 10]
-  k: '&to_layer_0 INT_MUHENKAN'
-- p: [20, 21]
-  k: '"'
-- p: [24, 25]
-  k: '='
+- p: [38, 39]
+  k: Sft+LCTRL
