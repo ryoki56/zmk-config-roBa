@@ -73,11 +73,12 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        num_layer: num_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp INTERNATIONAL_5 &to 2>;
+
+            label = "NUM_LAYER";
         };
     };
 
@@ -90,6 +91,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&num_layer>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <5>;
+        };
     };
 
     keymap {
@@ -97,10 +107,10 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp L         &kp O         &kp COMMA               &kp DOT                                                                                 &kp P      &kp M  &kp Y  &kp R  &kp W
-&kp E    &kp U         &kp I         &kp A                   &kp MINUS       &none                                 &kp FSLH                          &kp H      &kp N  &kp T  &kp S  &kp K
-&kp Z    &kp X         &kp C         &kp V                   &kp SEMI        &lt_to_layer_0 3 INTERNATIONAL_5      &lt_to_layer_0 1 INTERNATIONAL_4  &kp B      &kp F  &kp D  &kp J  &kp G
-&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 SPACE  &kp LEFT_SHIFT  &kp LCTRL                             &kp BACKSPACE                     &kp ENTER                       &lt_to_layer_0 6 DELETE
+&kp Q    &kp L         &kp O         &kp COMMA              &kp DOT                                                                                 &kp P      &kp M  &kp Y  &kp R  &kp W
+&kp E    &kp U         &kp I         &kp A                  &kp MINUS       &none                                 &kp FSLH                          &kp H      &kp N  &kp T  &kp S  &kp K
+&kp Z    &kp X         &kp C         &kp V                  &kp SEMI        &lt_to_layer_0 3 INTERNATIONAL_5      &lt_to_layer_0 1 INTERNATIONAL_4  &kp B      &kp F  &kp D  &kp J  &kp G
+&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &new_behavior 0 SPACE  &kp LEFT_SHIFT  &kp LCTRL                             &kp BACKSPACE                     &kp ENTER                       &lt_to_layer_0 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
