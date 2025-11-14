@@ -68,7 +68,7 @@
 
         combo_shift_ctrl {
             bindings = <&kp LS(LCTRL)>;
-            key-positions = <38 39>;
+            key-positions = <38 37>;
         };
     };
 
@@ -107,10 +107,10 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp L         &kp O         &kp COMMA              &kp DOT                                                                                 &kp P      &kp M  &kp Y  &kp R  &kp W
-&kp E    &kp U         &kp I         &kp A                  &kp MINUS       &none                                 &kp FSLH                          &kp H      &kp N  &kp T  &kp S  &kp K
-&kp Z    &kp X         &kp C         &kp V                  &kp SEMI        &lt_to_layer_0 3 INTERNATIONAL_5      &lt_to_layer_0 1 INTERNATIONAL_4  &kp B      &kp F  &kp D  &kp J  &kp G
-&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &new_behavior 0 SPACE  &kp LEFT_SHIFT  &kp LCTRL                             &kp BACKSPACE                     &kp ENTER                       &lt_to_layer_0 6 DELETE
+&kp Q    &kp L         &kp O         &kp COMMA  &kp DOT                                                                            &kp P      &kp M  &kp Y  &kp R  &kp W
+&kp E    &kp U         &kp I         &kp A      &kp MINUS  &none                                 &mo 3                             &kp H      &kp N  &kp T  &kp S  &kp K
+&kp Z    &kp X         &kp C         &kp V      &kp SLASH  &lt_to_layer_0 2 INTERNATIONAL_5      &lt_to_layer_0 1 INTERNATIONAL_4  &kp B      &kp F  &kp D  &kp J  &kp G
+&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT                        &kp BACKSPACE                     &kp ENTER                       &lt_to_layer_0 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -127,9 +127,9 @@
 
         NUM {
             bindings = <
-&trans          &kp N7  &kp N8  &kp N9  &kp COLON                                          &kp AMPERSAND   &kp AT           &kp LEFT_BRACKET  &kp PLUS                 &kp UNDER
+&kp SLASH       &kp N7  &kp N8  &kp N9  &kp COLON                                          &kp AMPERSAND   &kp AT           &kp LEFT_BRACKET  &kp PLUS                 &kp UNDER
 &kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp MINUS          &kp LG(LS(S))      &kp PERCENT  &kp LEFT_BRACE  &kp SEMICOLON    &kp SINGLE_QUOTE  &kp HASH                 &kp LS(INTERNATIONAL_1)
-&kp N0          &kp N1  &kp N2  &kp N3  &kp DOUBLE_QUOTES  &kp SLASH          &kp DOLLAR   &kp EQUAL       &kp EXCLAMATION  &kp CARET         &kp LS(INTERNATIONAL_3)  &kp INT_YEN
+&kp N0          &kp N1  &kp N2  &kp N3  &kp DOUBLE_QUOTES  &trans             &kp DOLLAR   &kp EQUAL       &kp EXCLAMATION  &kp CARET         &kp LS(INTERNATIONAL_3)  &kp INT_YEN
 &trans          &trans  &trans  &trans  &trans             &trans             &trans       &trans                                                                      &trans
             >;
         };
