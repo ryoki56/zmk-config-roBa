@@ -72,16 +72,6 @@
         };
     };
 
-    macros {
-        num_layer: num_layer {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp INTERNATIONAL_5 &to 2>;
-
-            label = "NUM_LAYER";
-        };
-    };
-
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
@@ -90,15 +80,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-        };
-
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
-            bindings = <&num_layer>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <5>;
         };
     };
 
