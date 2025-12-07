@@ -44,14 +44,14 @@
             key-positions = <38 39>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <30 31>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        pq {
+            bindings = <&kp PERIOD>;
+            key-positions = <32 33>;
         };
     };
 
@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp W         &kp E         &kp R      &kp T                                                             &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A    &kp S         &kp D         &kp F      &kp G           &none                      &to 5                  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z    &kp X         &kp C         &kp V      &kp B           &lt 2 INTERNATIONAL_5      &lt 1 INTERNATIONAL_4  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE                  &kp BACKSPACE          &lt 3 ENTER                             &lt 6 DELETE
+&kp Q    &kp W         &kp E         &kp R      &kp T                                                        &kp Y        &kp U  &kp I      &kp O      &kp P
+&kp A    &kp S         &kp D         &kp F      &kp G      &mkp MCLK                  &to 5                  &kp H        &kp J  &kp K      &kp L      &kp MINUS
+&kp Z    &kp X         &kp C         &kp V      &kp B      &lt 2 INTERNATIONAL_5      &lt 1 INTERNATIONAL_4  &kp N        &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
+&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT             &kp BACKSPACE          &lt 3 ENTER                               &lt 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
