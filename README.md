@@ -39,4 +39,8 @@ settings_reset-seeeduino_xiao_ble-zmk.uf2は[ここ](https://zmk.dev/docs/troubl
 + [公式ドキュメント](https://zmk.dev/)  
   + かなり丁寧に作りこまれているので基本的な設定はドキュメント見ればわかると思います。  
 + [zmk firmware Discordサーバ](https://zmk.dev/community/discord/invite)  
-  + 活発に動いているので質問すると誰かしら回答くれることが多いです。  
+  + 活発に動いているので質問すると誰かしら回答くれることが多いです。
+
+## その他参考資料
+- [オートマウスレイヤー](https://zenn.dev/kot149/articles/zmk-auto-mouse-layer)
+- [キーマップエディター](https://sensai-gadget.com/keymap-editor-usage/)
