@@ -16,7 +16,7 @@ layers:
   - D
   - F
   - G
-  - '&mkp MCLK'
+  - ''
   - {t: oonishi, h: toggle}
   - H
   - J
@@ -28,12 +28,12 @@ layers:
   - C
   - V
   - B
-  - {t: INTERNATIONAL 5, h: NUM}
-  - {t: INTERNATIONAL 4, h: FUNCTION}
+  - {t: INTERNATIONAL 5, h: FUNCTION}
+  - {t: INTERNATIONAL 4, h: NUM}
   - N
   - M
-  - '&mkp LCLK'
-  - '&mkp RCLK'
+  - ','
+  - .
   - /
   - TAB
   - LEFT WIN
@@ -45,8 +45,8 @@ layers:
   - {t: ENTER, h: ARROW}
   - {t: DELETE, h: '6'}
   FUNCTION:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&file_collapse'
+  - '&scope_collapse'
   - '}'
   - '|'
   - {t: ▽, type: trans}
@@ -55,8 +55,8 @@ layers:
   - F3
   - F4
   - F5
-  - ESCAPE
-  - {t: ▽, type: trans}
+  - '&file_expand'
+  - '&scope_expand'
   - '*'
   - (
   - {t: ▽, type: trans}
@@ -67,13 +67,13 @@ layers:
   - F8
   - F9
   - F10
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+P
+  - Ctl+Sft+P
   - ']'
   - \
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - F11
   - F12
   - {t: ▽, type: trans}
@@ -89,35 +89,35 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
+  - '"'
   - '7'
   - '8'
   - '9'
   - ':'
-  - '"'
-  - '&'
-  - '@'
-  - '['
   - +
-  - _
+  - '['
+  - '%'
+  - '#'
+  - Sft+INTERNATIONAL 1
+  - /
   - '4'
   - '5'
   - '6'
   - '-'
-  - /
   - Gui+Sft+S
-  - '%'
+  - $
   - '{'
+  - '&'
+  - '@'
   - ;
   - ''''
-  - '#'
-  - Sft+INTERNATIONAL 1
+  - '0'
   - '1'
   - '2'
   - '3'
-  - '0'
   - _
+  - {t: ▽, type: trans}
   - {type: held}
-  - $
   - '='
   - '!'
   - ^
@@ -163,9 +163,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Alt+LEFT ARROW
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -177,7 +177,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   MOUSE:
-  - {t: ▽, type: trans}
+  - ESCAPE
   - HOME
   - UP
   - END
@@ -187,29 +187,29 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ESC
+  - HOME
   - LEFT
   - DOWN
   - RIGHT
-  - {t: ▽, type: trans}
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
+  - Alt+LEFT SHIFT
+  - {t: ▽, type: trans}
+  - Gui+LEFT ARROW
+  - {t: ▽, type: trans}
+  - Gui+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Alt+LEFT ARROW
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - AltGr+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -308,6 +308,50 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  numlayer_jis:
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - '~'
+  - '@'
+  - '%'
+  - '#'
+  - _
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - Gui+Sft+S
+  - $
+  - '`'
+  - ''''
+  - '"'
+  - ;
+  - ':'
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ^
+  - '!'
+  - '&'
+  - '|'
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [11, 12]
   k: TAB
