@@ -114,8 +114,8 @@
             bindings = <
 &kp Q    &kp W         &kp E         &kp R      &kp T                                                        &kp Y        &kp U  &kp I      &kp O       &kp P
 &kp A    &kp S         &kp D         &kp F      &kp G      &none                      &to 5                  &kp H        &kp J  &kp K      &kp L       &kp MINUS
-&kp Z    &kp X         &kp C         &kp V      &kp B      &lt 1 INTERNATIONAL_5      &lt 2 INTERNATIONAL_4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT             &kp BACKSPACE          &lt 3 ENTER                                &lt 6 DELETE
+&kp Z    &kp X         &kp C         &kp V      &lt 3 B    &lt 1 INTERNATIONAL_5      &lt 4 INTERNATIONAL_4  &lt 3 N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT             &kp BACKSPACE          &lt 2 ENTER                                &lt 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
