@@ -66,7 +66,7 @@
         file_collapse: file_collapse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LC(K) &kp N0>;
+            bindings = <&macro_tap>, <&kp LC(K) &kp LC(N0)>;
 
             label = "FILE_COLLAPSE";
         };
@@ -74,7 +74,7 @@
         file_expand: file_expand {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LC(K) &kp J>;
+            bindings = <&macro_tap>, <&kp LC(K) &kp LC(J)>;
 
             label = "FILE_EXPAND";
         };
@@ -82,7 +82,7 @@
         scope_collapse: scope_collapse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LC(K) &kp BACKSLASH>;
+            bindings = <&macro_tap>, <&kp LC(K) &kp LC(BACKSLASH)>;
 
             label = "SCOPE_COLLAPSE";
         };
@@ -90,7 +90,7 @@
         scope_expand: scope_expand {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LC(K) &kp RIGHT_BRACKET>;
+            bindings = <&macro_tap>, <&kp LC(K) &kp LC(RIGHT_BRACKET)>;
 
             label = "SCOPE_EXPAND";
         };
@@ -132,10 +132,10 @@
 
         NUM {
             bindings = <
-&kp DOUBLE_QUOTES  &kp N7  &kp N8  &kp N9  &kp COLON                                       &kp AMPS        &kp AT           &kp LBKT   &kp PLUS                 &kp UNDERSCORE
-&kp SLASH          &kp N4  &kp N5  &kp N6  &kp MINUS       &kp LG(LS(S))      &kp PERCENT  &kp LEFT_BRACE  &kp SEMI         &kp SQT    &kp POUND                &kp LS(INTERNATIONAL_1)
-&kp N0             &kp N1  &kp N2  &kp N3  &kp UNDERSCORE  &trans             &kp DOLLAR   &kp EQUAL       &kp EXCLAMATION  &kp CARET  &kp LS(INTERNATIONAL_3)  &kp INTERNATIONAL_3
-&trans             &trans  &trans  &trans  &trans          &trans             &trans       &trans                                                               &trans
+&kp DOUBLE_QUOTES  &kp N7  &kp N8  &kp N9  &kp COLON                                      &kp PLUS        &kp LEFT_BRACKET  &kp PERCENT  &kp HASH                 &kp LS(INTERNATIONAL_1)
+&kp SLASH          &kp N4  &kp N5  &kp N6  &kp MINUS       &kp LG(LS(S))      &kp DOLLAR  &kp LEFT_BRACE  &kp AMPERSAND     &kp AT       &kp SEMICOLON            &kp SQT
+&kp N0             &kp N1  &kp N2  &kp N3  &kp UNDERSCORE  &trans             &trans      &kp EQUAL       &kp EXCLAMATION   &kp CARET    &kp LS(INTERNATIONAL_3)  &kp INTERNATIONAL_3
+&trans             &trans  &trans  &trans  &trans          &trans             &trans      &trans                                                                  &trans
             >;
         };
 
