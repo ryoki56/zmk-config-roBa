@@ -28,10 +28,10 @@ settings_reset-seeeduino_xiao_ble-zmk.uf2は[ここ](https://zmk.dev/docs/troubl
     + **ファームウェアを書き直した際は、PC側のペアリング情報も削除してから再度ペアリングを行ってください。**  
 
 ## key-map
-
-<img src="keymap_image/function.png">
-<img src="keymap_image/num.png">
 <img src="keymap-drawer/roBa.svg" >
+
+※numlayerのJIS配列版はlayer7にあります  
+※functionlayerの左手中指と人差し指のキーは、上から順に{([です。  
 
 
 ## zmk firmwareについて
