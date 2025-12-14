@@ -8,7 +8,14 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <150>;
+    tapping-term-ms = <150>;
+};
+
+&lt {
+    tapping-term-ms = <150>;
+    quick-tap-ms = <150>;
+    flavor = "balanced";
 };
 
 &trackball {
@@ -50,32 +57,32 @@
 
         Left_Bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <1 2>;
+            key-positions = <2 12>;
         };
 
         Right_Bracket {
             bindings = <&kp BACKSLASH>;
-            key-positions = <2 3>;
+            key-positions = <3 13>;
         };
 
         Left_Parenthesis {
             bindings = <&kp ASTERISK>;
-            key-positions = <6 7>;
+            key-positions = <5 17>;
         };
 
         Right_Parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <7 8>;
+            key-positions = <6 18>;
         };
 
         Left_Brace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <18 19>;
+            key-positions = <19 7>;
         };
 
         Right_Brace {
             bindings = <&kp PIPE>;
-            key-positions = <19 20>;
+            key-positions = <20 8>;
         };
 
         check_key_no {
@@ -134,6 +141,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        lt_hold: lt_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_HOLD";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
+        };
     };
 
     keymap {
@@ -141,10 +158,10 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp W         &kp E         &kp R      &kp T                                                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A    &kp S         &kp D         &kp F      &kp G      &none                      &to 5                  &kp H        &kp J  &kp K      &kp L       &lt 4 MINUS
-&kp Z    &kp X         &kp C         &kp V      &lt 3 B    &lt 1 INTERNATIONAL_5      &lt 4 INTERNATIONAL_4  &lt 3 N      &kp M  &kp COMMA  &kp PERIOD  &lt 5 SLASH
-&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT             &kp BACKSPACE          &lt 2 ENTER                                &lt 6 DELETE
+&kp Q    &kp W         &kp E         &kp R      &kp T                                                               &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A    &kp S         &kp D         &kp F      &kp G             &none                      &to 5                  &kp H        &kp J  &kp K      &kp L       &lt 4 MINUS
+&kp Z    &kp X         &kp C         &kp V      &lt 3 B           &lt 1 INTERNATIONAL_5      &lt 4 INTERNATIONAL_4  &lt 3 N      &kp M  &kp COMMA  &kp PERIOD  &lt 5 SLASH
+&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &lt_hold 2 SPACE  &kp LEFT_SHIFT             &kp BACKSPACE          &lt 2 ENTER                                &lt 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
