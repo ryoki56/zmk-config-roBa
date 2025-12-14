@@ -377,8 +377,6 @@ combos:
 - p: [20, 8]
   k: '&auto_muhenkan PIPE'
   l: [default, oonishi]
-- p: [18, 19, 20, 8, 6, 30, 32, 0, 10, 22]
-  k: ''
 - p: [0, 10]
   k: '&file_open'
   l: [FUNCTION]
