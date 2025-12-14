@@ -90,11 +90,6 @@
             layers = <0 5>;
         };
 
-        check_key_no {
-            bindings = <&none>;
-            key-positions = <18 19 20 8 6 30 32 0 10 22>;
-        };
-
         file_open {
             bindings = <&file_open>;
             key-positions = <0 10>;
