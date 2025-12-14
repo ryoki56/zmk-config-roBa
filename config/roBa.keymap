@@ -15,7 +15,6 @@
 &lt {
     tapping-term-ms = <150>;
     quick-tap-ms = <150>;
-    flavor = "balanced";
 };
 
 &trackball {
@@ -56,38 +55,62 @@
         };
 
         Left_Bracket {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&auto_muhenkan RIGHT_BRACKET>;
             key-positions = <2 12>;
         };
 
         Right_Bracket {
-            bindings = <&kp BACKSLASH>;
+            bindings = <&auto_muhenkan BACKSLASH>;
             key-positions = <3 13>;
         };
 
         Left_Parenthesis {
-            bindings = <&kp ASTERISK>;
+            bindings = <&auto_muhenkan ASTERISK>;
             key-positions = <5 17>;
         };
 
         Right_Parenthesis {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&auto_muhenkan LEFT_PARENTHESIS>;
             key-positions = <6 18>;
         };
 
         Left_Brace {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&auto_muhenkan RIGHT_BRACE>;
             key-positions = <19 7>;
         };
 
         Right_Brace {
-            bindings = <&kp PIPE>;
+            bindings = <&auto_muhenkan PIPE>;
             key-positions = <20 8>;
         };
 
         check_key_no {
             bindings = <&none>;
             key-positions = <18 19 20 8 6 30 32 0 10 22>;
+        };
+
+        file_open {
+            bindings = <&file_open>;
+            key-positions = <0 10>;
+            layers = <1>;
+        };
+
+        file_close {
+            bindings = <&file_close>;
+            key-positions = <1 11>;
+            layers = <1>;
+        };
+
+        scope_open {
+            bindings = <&scope_open>;
+            key-positions = <2 12>;
+            layers = <1>;
+        };
+
+        scope_close {
+            bindings = <&scope_close>;
+            key-positions = <3 13>;
+            layers = <1>;
         };
     };
 
@@ -99,7 +122,7 @@
             label = "TO_LAYER_0";
         };
 
-        file_collapse: file_collapse {
+        file_close: file_collapse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LC(K) &kp LC(N0)>;
@@ -107,7 +130,7 @@
             label = "FILE_COLLAPSE";
         };
 
-        file_expand: file_expand {
+        file_open: file_expand {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LC(K) &kp LC(J)>;
@@ -115,7 +138,7 @@
             label = "FILE_EXPAND";
         };
 
-        scope_collapse: scope_collapse {
+        scope_close: scope_collapse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LC(K) &kp LC(BACKSLASH)>;
@@ -123,12 +146,19 @@
             label = "SCOPE_COLLAPSE";
         };
 
-        scope_expand: scope_expand {
+        scope_open: scope_expand {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LC(K) &kp LC(RIGHT_BRACKET)>;
 
             label = "SCOPE_EXPAND";
+        };
+
+        auto_muhenkan: auto_muhenkan {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp INTERNATIONAL_5 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "AUTO_MUHENKAN";
         };
     };
 
@@ -148,8 +178,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <250>;
         };
     };
 
@@ -158,10 +188,10 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp W         &kp E         &kp R      &kp T                                                               &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A    &kp S         &kp D         &kp F      &kp G             &none                      &to 5                  &kp H        &kp J  &kp K      &kp L       &lt 4 MINUS
-&kp Z    &kp X         &kp C         &kp V      &lt 3 B           &lt 1 INTERNATIONAL_5      &lt 4 INTERNATIONAL_4  &lt 3 N      &kp M  &kp COMMA  &kp PERIOD  &lt 5 SLASH
-&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &lt_hold 2 SPACE  &kp LEFT_SHIFT             &kp BACKSPACE          &lt 2 ENTER                                &lt 6 DELETE
+&kp Q    &kp W         &kp E         &kp R                  &kp T                                                        &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A    &kp S         &kp D         &kp F                  &kp G             &none               &to 5                  &kp H        &kp J  &kp K      &kp L       &lt 4 MINUS
+&kp Z    &kp X         &kp C         &kp V                  &lt 3 B           &kp RCTRL           &lt 4 INTERNATIONAL_4  &lt 3 N      &kp M  &kp COMMA  &kp PERIOD  &lt 5 SLASH
+&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INTERNATIONAL_5  &lt_hold 2 SPACE  &kp LEFT_SHIFT      &kp BACKSPACE          &lt 2 ENTER                                &lt 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -169,10 +199,10 @@
 
         FUNCTION {
             bindings = <
-&file_collapse  &scope_collapse  &kp RIGHT_BRACE  &kp PIPE              &kp F12                          &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&file_expand    &scope_expand    &kp ASTRK        &kp LEFT_PARENTHESIS  &kp LS(F12)  &trans      &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&kp LC(P)       &kp LC(LS(P))    &kp RBKT         &kp BSLH              &trans       &trans      &trans  &kp F11  &kp F12  &trans  &trans  &trans
-&trans          &trans           &trans           &trans                &trans       &trans      &trans  &trans                            &trans
+&file_close  &scope_close  &kp LC(P)  &kp LC(LS(P))  &kp F12                          &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+&kp LC(A)    &kp LC(S)     &kp LC(D)  &kp LC(F)      &kp LS(F12)  &trans      &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&kp LC(Z)    &kp LC(X)     &kp LC(C)  &kp LC(V)      &kp LC(Y)    &trans      &trans  &kp F11  &kp F12  &trans  &trans  &trans
+&trans       &trans        &trans     &trans         &trans       &trans      &trans  &trans                            &trans
             >;
         };
 
