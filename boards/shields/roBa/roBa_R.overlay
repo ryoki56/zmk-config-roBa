@@ -18,10 +18,14 @@
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
     excluded-positions = <
-        18 // J
-        19 // K
-        21 // ;
-        34 // Ctrl
+        18 // J 左クリック
+        19 // K 中クリック
+        20 // L 右クリック
+        8  // O ウィンドウズボタン
+        24 // C alt + shift 縦選択のショートカット
+        37 // Ctrl なんとなく
+        38 // Space なんとなく
+        39 // Shift なんとなく
     >;
 };
 
