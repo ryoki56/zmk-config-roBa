@@ -57,31 +57,37 @@
         Left_Bracket {
             bindings = <&auto_muhenkan RIGHT_BRACKET>;
             key-positions = <2 12>;
+            layers = <0 5>;
         };
 
         Right_Bracket {
             bindings = <&auto_muhenkan BACKSLASH>;
             key-positions = <3 13>;
+            layers = <0 5>;
         };
 
         Left_Parenthesis {
             bindings = <&auto_muhenkan ASTERISK>;
             key-positions = <5 17>;
+            layers = <0 5>;
         };
 
         Right_Parenthesis {
             bindings = <&auto_muhenkan LEFT_PARENTHESIS>;
             key-positions = <6 18>;
+            layers = <0 5>;
         };
 
         Left_Brace {
             bindings = <&auto_muhenkan RIGHT_BRACE>;
             key-positions = <19 7>;
+            layers = <0 5>;
         };
 
         Right_Brace {
             bindings = <&auto_muhenkan PIPE>;
             key-positions = <20 8>;
+            layers = <0 5>;
         };
 
         check_key_no {
@@ -208,10 +214,10 @@
 
         NUM {
             bindings = <
-&kp DOUBLE_QUOTES  &kp N7  &kp N8  &kp N9  &kp COLON                                      &kp PLUS        &kp LEFT_BRACKET  &kp PERCENT  &kp HASH                 &kp LS(INTERNATIONAL_1)
-&kp SLASH          &kp N4  &kp N5  &kp N6  &kp MINUS       &kp LG(LS(S))      &kp DOLLAR  &kp LEFT_BRACE  &kp AMPERSAND     &kp AT       &kp SEMICOLON            &kp SQT
-&kp N0             &kp N1  &kp N2  &kp N3  &kp UNDERSCORE  &trans             &trans      &kp EQUAL       &kp EXCLAMATION   &kp CARET    &kp LS(INTERNATIONAL_3)  &kp INTERNATIONAL_3
-&trans             &trans  &trans  &trans  &trans          &trans             &trans      &trans                                                                  &trans
+&auto_muhenkan DOUBLE_QUOTES  &auto_muhenkan N7  &auto_muhenkan N8  &auto_muhenkan N9  &auto_muhenkan COLON                                                 &auto_muhenkan PLUS        &auto_muhenkan LEFT_BRACKET  &auto_muhenkan PERCENT  &auto_muhenkan HASH                 &auto_muhenkan LS(INTERNATIONAL_1)
+&auto_muhenkan SLASH          &auto_muhenkan N4  &auto_muhenkan N5  &auto_muhenkan N6  &auto_muhenkan MINUS       &kp LG(LS(S))      &auto_muhenkan DOLLAR  &auto_muhenkan LEFT_BRACE  &auto_muhenkan AMPERSAND     &auto_muhenkan AT       &auto_muhenkan SEMICOLON            &auto_muhenkan SQT
+&auto_muhenkan N0             &auto_muhenkan N1  &auto_muhenkan N2  &auto_muhenkan N3  &auto_muhenkan UNDERSCORE  &trans             &trans                 &auto_muhenkan EQUAL       &auto_muhenkan EXCLAMATION   &auto_muhenkan CARET    &auto_muhenkan LS(INTERNATIONAL_3)  &auto_muhenkan INTERNATIONAL_3
+&trans                        &trans             &trans             &trans             &trans                     &trans             &trans                 &trans                                                                                                              &trans
             >;
         };
 
