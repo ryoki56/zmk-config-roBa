@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 4 200>; };
+
 // 長いとjklキーのマウスクリック後初回入力の邪魔になってうざい
 // マウスクリックする→jキー入力しようとする→まだマウスレイヤーにいるのでクリックになる→じゃま
 // これの設定の意図はダブルクリック受付ぐらいだと思うので受付時間ぐらいあればいい
@@ -208,8 +209,8 @@
             bindings = <
 &kp Q           &kp W         &kp E         &kp R                  &kp T                                                        &kp Y             &kp U  &kp I      &kp O       &kp P
 &kp A           &kp S         &kp D         &kp F                  &kp G             &none               &to 6                  &kp H             &kp J  &kp K      &kp L       &lt 5 MINUS
-&kp Z           &kp X         &kp C         &kp V                  &kp B             &kp RCTRL           &lt 3 INTERNATIONAL_4  &kp N             &kp M  &kp COMMA  &kp PERIOD  &lt 3 SLASH
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INTERNATIONAL_5  &lt_hold 2 SPACE  &kp LEFT_SHIFT      &kp BACKSPACE          &lt_hold 2 ENTER                                &lt 6 DELETE
+&kp Z           &kp X         &kp C         &kp V                  &kp B             &kp RCTRL           &lt 2 INTERNATIONAL_4  &kp N             &kp M  &kp COMMA  &kp PERIOD  &lt 1 SLASH
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INTERNATIONAL_5  &lt_hold 2 SPACE  &kp LEFT_SHIFT      &lt_hold 2 BACKSPACE   &lt_hold 3 ENTER                                &lt 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -217,10 +218,10 @@
 
         FUNCTION {
             bindings = <
-&file_close  &scope_close  &kp LC(P)  &kp LC(LS(P))  &kp F12                          &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&kp LC(A)    &kp LC(S)     &kp LC(D)  &kp LC(F)      &kp LS(F12)  &trans      &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&kp LC(Z)    &kp LC(X)     &kp LC(C)  &kp LC(V)      &kp LC(Y)    &trans      &trans  &kp F11  &kp F12  &trans  &trans  &trans
-&trans       &trans        &trans     &trans         &trans       &trans      &trans  &trans                            &trans
+&file_close  &scope_close  &kp LC(P)  &kp LC(LS(P))  &kp F12                          &kp F1  &kp F2   &kp F3   &kp F4   &trans
+&kp LC(A)    &kp LC(S)     &kp LC(D)  &kp LC(F)      &kp LS(F12)  &trans      &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&kp LC(Z)    &kp LC(X)     &kp LC(C)  &kp LC(V)      &kp LC(Y)    &trans      &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&trans       &trans        &trans     &trans         &trans       &trans      &trans  &trans                             &trans
             >;
         };
 
@@ -246,10 +247,10 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE          &kp LC(LS(TAB))     &kp UP          &kp LC(TAB)          &trans                                   &trans  &kp LS(ENTER)       &trans               &kp LEFT_GUI         &trans
-&kp HOME            &kp LEFT            &kp DOWN        &kp RIGHT            &kp END              &trans      &trans  &trans  &mkp MB1            &mkp MB3             &mkp MB2             &trans
-&kp LA(LEFT_ARROW)  &kp LG(LEFT_ARROW)  &kp LA(LSHIFT)  &kp LG(RIGHT_ARROW)  &kp LA(RIGHT_ARROW)  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &kp RA(RIGHT_SHIFT)  &kp RA(RIGHT_ARROW)  &trans
-&trans              &trans              &trans          &trans               &trans               &trans      &trans  &trans                                                                &trans
+&trans  &trans    &kp PAGE_UP    &trans   &trans                      &trans  &kp LS(ENTER)       &trans               &kp LEFT_GUI         &trans
+&trans  &kp HOME  &kp PAGE_DOWN  &kp END  &trans  &trans      &trans  &trans  &mkp MB1            &mkp MB3             &mkp MB2             &trans
+&trans  &trans    &trans         &trans   &trans  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &kp RA(RIGHT_SHIFT)  &kp RA(RIGHT_ARROW)  &trans
+&trans  &trans    &trans         &trans   &trans  &trans      &trans  &trans                                                                &trans
             >;
         };
 
