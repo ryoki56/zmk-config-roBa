@@ -51,38 +51,38 @@
 
         Left_Bracket {
             bindings = <&auto_muhenkan RIGHT_BRACKET>;
-            key-positions = <2 12>;
-            layers = <0 5>;
+            key-positions = <3 13>;
+            layers = <0 6>;
         };
 
         Right_Bracket {
             bindings = <&auto_muhenkan BACKSLASH>;
-            key-positions = <3 13>;
-            layers = <0 5>;
+            key-positions = <4 14>;
+            layers = <0 6>;
         };
 
         Left_Parenthesis {
             bindings = <&auto_muhenkan ASTERISK>;
             key-positions = <5 17>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         Right_Parenthesis {
             bindings = <&auto_muhenkan LEFT_PARENTHESIS>;
             key-positions = <6 18>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         Left_Brace {
             bindings = <&auto_muhenkan RIGHT_BRACE>;
             key-positions = <19 7>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         Right_Brace {
             bindings = <&auto_muhenkan PIPE>;
             key-positions = <20 8>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         file_open {
@@ -107,6 +107,18 @@
             bindings = <&scope_close>;
             key-positions = <3 13>;
             layers = <1>;
+        };
+
+        left_sankaku {
+            bindings = <&kp LS(COMMA)>;
+            key-positions = <0 10>;
+            layers = <0 5>;
+        };
+
+        right_sankaku {
+            bindings = <&kp LS(PERIOD)>;
+            key-positions = <11 1>;
+            layers = <0 5>;
         };
     };
 
@@ -191,10 +203,10 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp W         &kp E         &kp R                  &kp T                                                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A    &kp S         &kp D         &kp F                  &kp G             &none               &to 5                  &kp H        &kp J  &kp K      &kp L       &lt 4 MINUS
-&kp Z    &kp X         &kp C         &kp V                  &lt 3 B           &kp RCTRL           &lt 4 INTERNATIONAL_4  &lt 3 N      &kp M  &kp COMMA  &kp PERIOD  &lt 5 SLASH
-&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INTERNATIONAL_5  &lt_hold 2 SPACE  &kp LEFT_SHIFT      &kp BACKSPACE          &lt 2 ENTER                                &lt 6 DELETE
+&kp Q           &kp W         &kp E         &kp R                  &kp T                                                        &kp Y             &kp U  &kp I      &kp O       &kp P
+&kp A           &kp S         &kp D         &kp F                  &kp G             &none               &to 6                  &kp H             &kp J  &kp K      &kp L       &lt 5 MINUS
+&kp Z           &kp X         &kp C         &kp V                  &kp B             &kp RCTRL           &lt 3 INTERNATIONAL_4  &kp N             &kp M  &kp COMMA  &kp PERIOD  &lt 3 SLASH
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INTERNATIONAL_5  &lt_hold 2 SPACE  &kp LEFT_SHIFT      &kp BACKSPACE          &lt_hold 2 ENTER                                &lt 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -220,10 +232,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE          &kp LC(LS(TAB))     &kp UP_ARROW    &kp LC(TAB)          &trans                                   &trans  &kp RC(RS(TAB))     &kp UP    &kp RC(TAB)          &trans
-&kp HOME            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END              &trans      &trans  &trans  &kp LEFT            &kp DOWN  &kp RIGHT            &trans
-&kp LA(LEFT_ARROW)  &kp LG(LEFT_ARROW)  &trans          &kp LG(RIGHT_ARROW)  &kp LA(RIGHT_ARROW)  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &trans    &kp LA(RIGHT_ARROW)  &trans
-&trans              &trans              &trans          &trans               &trans               &trans      &trans  &trans                                                     &trans
+&kp ESCAPE          &kp LC(LS(TAB))     &kp UP_ARROW    &kp LC(TAB)          &trans                                   &kp ESC       &kp RC(RS(TAB))     &kp UP    &kp RC(TAB)          &trans
+&kp HOME            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END              &trans      &trans  &kp HOME      &kp LEFT            &kp DOWN  &kp RIGHT            &kp END
+&kp LA(LEFT_ARROW)  &kp LG(LEFT_ARROW)  &trans          &kp LG(RIGHT_ARROW)  &kp LA(RIGHT_ARROW)  &trans      &trans  &kp LA(LEFT)  &kp LG(LEFT_ARROW)  &trans    &kp LG(RIGHT_ARROW)  &kp LA(RIGHT)
+&trans              &trans              &trans          &trans               &trans               &trans      &trans  &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -231,10 +243,10 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE          &kp LC(LS(TAB))     &kp UP          &kp LC(TAB)          &trans                                   &trans  &kp LS(ENTER)       &trans    &kp LEFT_GUI         &trans
-&kp HOME            &kp LEFT            &kp DOWN        &kp RIGHT            &kp END              &trans      &trans  &trans  &mkp MB1            &mkp MB3  &mkp MB2             &trans
-&kp LA(LEFT_ARROW)  &kp LG(LEFT_ARROW)  &kp LA(LSHIFT)  &kp LG(RIGHT_ARROW)  &kp LA(RIGHT_ARROW)  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &trans    &kp RA(RIGHT_ARROW)  &trans
-&trans              &trans              &trans          &trans               &trans               &trans      &trans  &trans                                                     &trans
+&kp ESCAPE          &kp LC(LS(TAB))     &kp UP          &kp LC(TAB)          &trans                                   &trans  &kp LS(ENTER)       &trans               &kp LEFT_GUI         &trans
+&kp HOME            &kp LEFT            &kp DOWN        &kp RIGHT            &kp END              &trans      &trans  &trans  &mkp MB1            &mkp MB3             &mkp MB2             &trans
+&kp LA(LEFT_ARROW)  &kp LG(LEFT_ARROW)  &kp LA(LSHIFT)  &kp LG(RIGHT_ARROW)  &kp LA(RIGHT_ARROW)  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &kp RA(RIGHT_SHIFT)  &kp RA(RIGHT_ARROW)  &trans
+&trans              &trans              &trans          &trans               &trans               &trans      &trans  &trans                                                                &trans
             >;
         };
 
