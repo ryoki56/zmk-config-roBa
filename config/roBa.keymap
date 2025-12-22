@@ -207,10 +207,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R                  &kp T                                                        &kp Y             &kp U  &kp I      &kp O       &kp P
-&kp A           &kp S         &kp D         &kp F                  &kp G             &none               &to 5                  &kp H             &kp J  &kp K      &kp L       &lt 7 MINUS
-&kp Z           &kp X         &kp C         &kp V                  &kp B             &kp RCTRL           &lt 2 INTERNATIONAL_4  &kp N             &kp M  &kp COMMA  &kp PERIOD  &lt 1 SLASH
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INTERNATIONAL_5  &lt_hold 2 SPACE  &kp LEFT_SHIFT      &lt_hold 2 BACKSPACE   &lt_hold 3 ENTER                                &lt 6 DELETE
+&kp Q           &kp W         &kp E         &kp R                  &kp T                                                               &kp Y             &kp U  &kp I      &kp O       &kp P
+&kp A           &kp S         &kp D         &kp F                  &kp G             &none                      &to 5                  &kp H             &kp J  &kp K      &kp L       &lt 7 MINUS
+&kp Z           &kp X         &kp C         &kp V                  &kp B             &kp RCTRL                  &lt 7 INTERNATIONAL_4  &kp N             &kp M  &kp COMMA  &kp PERIOD  &lt 1 SLASH
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INTERNATIONAL_5  &lt_hold 2 SPACE  &lt_hold 3 LEFT_SHIFT      &lt_hold 2 BACKSPACE   &lt_hold 3 ENTER                                &lt 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -256,10 +256,10 @@
 
         oonishi {
             bindings = <
-&kp Q   &kp L   &kp O   &kp COMMA  &kp DOT                          &kp P    &kp M  &kp Y  &kp R  &kp W
-&kp A   &kp I   &kp U   &kp E      &kp MINUS    &trans      &to 0   &kp H    &kp N  &kp T  &kp S  &kp K
-&kp Z   &kp X   &kp C   &kp V      &lt 3 SLASH  &trans      &trans  &lt 3 B  &kp F  &kp D  &kp J  &kp G
-&trans  &trans  &trans  &trans     &trans       &trans      &trans  &trans                        &trans
+&kp Q   &kp L   &kp O   &kp COMMA  &kp DOT                        &kp P   &kp M  &kp Y  &kp R  &kp W
+&kp A   &kp I   &kp U   &kp E      &kp MINUS  &trans      &to 0   &kp H   &kp N  &kp T  &kp S  &kp K
+&kp Z   &kp X   &kp C   &kp V      &kp SLASH  &trans      &trans  &kp B   &kp F  &kp D  &kp J  &kp G
+&trans  &trans  &trans  &trans     &trans     &trans      &trans  &trans                       &trans
             >;
         };
 
@@ -274,9 +274,9 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp N7  &kp N8  &kp N9  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
