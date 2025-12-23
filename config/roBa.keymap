@@ -242,10 +242,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE          &kp LC(LS(TAB))     &kp UP_ARROW    &kp LC(TAB)          &trans                                   &kp ESC       &kp RC(RS(TAB))     &kp UP    &kp RC(TAB)          &trans
-&kp HOME            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END              &trans      &trans  &kp HOME      &kp LEFT            &kp DOWN  &kp RIGHT            &kp END
-&kp LA(LEFT_ARROW)  &kp LG(LEFT_ARROW)  &trans          &kp LG(RIGHT_ARROW)  &kp LA(RIGHT_ARROW)  &trans      &trans  &kp LG(LEFT)  &kp LA(LEFT_ARROW)  &trans    &kp LA(RIGHT_ARROW)  &kp LG(RIGHT)
-&trans              &trans              &trans          &trans               &trans               &trans      &trans  &trans                                                           &trans
+&kp ESCAPE          &kp LC(LS(TAB))     &kp UP_ARROW    &kp LC(TAB)          &trans                                          &kp ESC       &kp RC(RS(TAB))     &kp UP    &kp RC(TAB)          &trans
+&kp HOME            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END              &trans      &kp LC(COLON)  &kp HOME      &kp LEFT            &kp DOWN  &kp RIGHT            &kp END
+&kp LA(LEFT_ARROW)  &kp LG(LEFT_ARROW)  &trans          &kp LG(RIGHT_ARROW)  &kp LA(RIGHT_ARROW)  &trans      &kp LC(MINUS)  &kp LG(LEFT)  &kp LA(LEFT_ARROW)  &trans    &kp LA(RIGHT_ARROW)  &kp LG(RIGHT)
+&trans              &trans              &trans          &trans               &trans               &trans      &trans         &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -280,10 +280,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans             &auto_muhenkan N7  &auto_muhenkan N8  &auto_muhenkan N9  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &auto_muhenkan N0  &auto_muhenkan N4  &auto_muhenkan N5  &auto_muhenkan N6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &auto_muhenkan N0  &auto_muhenkan N1  &auto_muhenkan N2  &auto_muhenkan N3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                      &trans
+&trans  &trans  &trans  &trans  &trans                             &trans             &auto_muhenkan N7  &auto_muhenkan N8  &auto_muhenkan N9  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &auto_muhenkan N0  &auto_muhenkan N4  &auto_muhenkan N5  &auto_muhenkan N6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &auto_muhenkan N0  &auto_muhenkan N1  &auto_muhenkan N2  &auto_muhenkan N3  &kp PERIOD
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(COLON)  &kp LC(MINUS)                                                               &trans
             >;
         };
 
