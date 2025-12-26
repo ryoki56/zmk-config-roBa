@@ -239,7 +239,7 @@
 &lt_hold 3 LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INTERNATIONAL_5  &lt_hold 2 SPACE  &kp LSHIFT      &lt_hold 2 BACKSPACE   &lt_hold 3 ENTER                                &lt 6 DELETE
             >;
 
-            sensor-bindings = <&encoder_msc_up_down>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
@@ -249,6 +249,8 @@
 &kp LC(Z)      &kp LC(X)  &kp LC(C)  &kp LC(V)      &kp LS(F12)  &trans      &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
 &kp BACKSPACE  &kp ENTER  &kp LG(V)  &trans         &trans       &trans      &trans  &trans                             &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         NUM {
@@ -258,6 +260,8 @@
 &auto_muhenkan N0             &auto_muhenkan N1  &auto_muhenkan N2  &auto_muhenkan N3  &auto_muhenkan UNDERSCORE  &trans             &trans                 &auto_muhenkan EQUAL       &auto_muhenkan EXCLAMATION   &auto_muhenkan CARET    &auto_muhenkan LS(INTERNATIONAL_3)  &auto_muhenkan INTERNATIONAL_3
 &trans                        &trans             &trans             &trans             &trans                     &trans             &trans                 &trans                                                                                                              &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW {
@@ -268,7 +272,7 @@
 &trans              &trans              &trans          &trans               &trans               &trans      &trans         &trans                                                           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
@@ -278,6 +282,8 @@
 &trans  &trans    &trans         &trans   &trans  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &kp RA(RIGHT_SHIFT)  &kp RA(RIGHT_ARROW)  &trans
 &trans  &trans    &trans         &trans   &trans  &trans      &trans  &trans                                                                &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         oonishi {
@@ -287,6 +293,8 @@
 &kp Z   &kp X   &kp C   &kp V      &kp SLASH  &trans      &trans  &kp B   &kp F  &kp D  &kp J  &kp G
 &trans  &trans  &trans  &trans     &trans     &trans      &trans  &trans                       &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         layer_6 {
@@ -296,6 +304,8 @@
 &kp N0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &bt BT_CLR_ALL  &bt BT_CLR
 &trans       &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                    &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         Scroll {
@@ -305,6 +315,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans         &auto_muhenkan N0  &auto_muhenkan N1  &auto_muhenkan N2  &auto_muhenkan N3  &kp PERIOD
 &trans  &trans  &trans  &trans  &trans  &trans      &kp LC(COLON)  &kp LC(MINUS)                                                               &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         numlayer_jis {
@@ -314,6 +326,8 @@
 &kp N0        &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans             &trans      &kp CARET  &kp EXCLAMATION  &kp AMPERSAND      &kp PIPE       &kp BACKSLASH
 &trans        &trans  &trans  &trans  &trans     &trans             &trans      &trans                                                        &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 };
