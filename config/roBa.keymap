@@ -285,10 +285,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE          &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                                          &kp ESC       &kp RC(RS(TAB))  &kp UP    &kp RC(TAB)  &trans
-&kp HOME            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END              &trans      &kp LC(COLON)  &kp HOME      &kp LEFT         &kp DOWN  &kp RIGHT    &kp END
-&kp LG(LEFT_ARROW)  &back            &trans          &forward         &kp LG(RIGHT_ARROW)  &trans      &kp LC(MINUS)  &kp LG(LEFT)  &back            &trans    &forward     &kp LG(RIGHT)
-&trans              &trans           &trans          &trans           &trans               &trans      &trans         &trans                                                &trans
+&kp PAGE_UP         &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp PAGE_DOWN                                   &kp PAGE_UP   &kp RC(RS(TAB))  &kp UP        &kp RC(TAB)      &kp PAGE_DOWN
+&kp HOME            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END              &trans      &kp LC(COLON)  &kp HOME      &kp LEFT         &kp DOWN      &kp RIGHT        &kp END
+&kp LG(LEFT_ARROW)  &kp LEFT_ARROW   &kp LEFT_ALT    &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)  &trans      &kp LC(MINUS)  &kp LG(LEFT)  &kp LEFT_ARROW   &kp LEFT_ALT  &kp RIGHT_ARROW  &kp LG(RIGHT)
+&trans              &trans           &trans          &trans           &trans               &trans      &trans         &trans                                                        &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -298,7 +298,7 @@
             bindings = <
 &trans  &trans    &kp PAGE_UP    &trans   &trans                      &trans  &kp LS(ENTER)  &trans               &kp LEFT_GUI  &trans
 &trans  &kp HOME  &kp PAGE_DOWN  &kp END  &trans  &trans      &trans  &trans  &mkp MB1       &mkp MB3             &mkp MB2      &trans
-&trans  &trans    &trans         &trans   &trans  &trans      &trans  &trans  &back          &kp RA(RIGHT_SHIFT)  &forward      &trans
+&trans  &trans    &trans         &trans   &trans  &trans      &trans  &trans  &trans         &kp RA(RIGHT_SHIFT)  &trans        &trans
 &trans  &trans    &trans         &trans   &trans  &trans      &trans  &trans                                                    &trans
             >;
 
