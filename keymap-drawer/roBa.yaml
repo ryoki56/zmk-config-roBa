@@ -16,72 +16,72 @@ layers:
   - D
   - F
   - G
-  - ''
+  - Gui+Sft+S
   - {t: oonishi, h: toggle}
   - H
   - J
   - K
   - L
-  - '-'
+  - {t: '-', h: Scroll}
   - Z
   - X
   - C
   - V
   - B
-  - {t: INTERNATIONAL 5, h: FUNCTION}
-  - {t: INTERNATIONAL 4, h: NUM}
+  - RCTRL
+  - {t: INTERNATIONAL 4, h: Scroll}
   - N
   - M
   - ','
   - .
-  - /
-  - TAB
+  - {t: /, h: FUNCTION}
+  - {t: LEFT SHIFT, h: Scroll}
   - LEFT WIN
   - LEFT ALT
-  - LCTRL
-  - SPACE
-  - LEFT SHIFT
-  - BACKSPACE
+  - {t: INTERNATIONAL 5, h: FUNCTION}
+  - {t: SPACE, h: NUM}
+  - LSHIFT
+  - {t: BACKSPACE, h: NUM}
   - {t: ENTER, h: ARROW}
   - {t: DELETE, h: '6'}
   FUNCTION:
-  - '&file_collapse'
-  - '&scope_collapse'
-  - '}'
-  - '|'
-  - {t: ▽, type: trans}
+  - Ctl+Y
+  - Ctl+W
+  - Ctl+P
+  - Ctl+Sft+P
+  - Ctl+T
   - F1
   - F2
   - F3
   - F4
-  - F5
-  - '&file_expand'
-  - '&scope_expand'
-  - '*'
-  - (
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - Ctl+P
-  - Ctl+Sft+P
-  - ']'
-  - \
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - F11
+  - Ctl+A
+  - Ctl+S
+  - Ctl+D
+  - Ctl+F
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - F5
+  - F6
+  - F7
+  - F8
+  - INTERNATIONAL 5
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Sft+F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F9
+  - F10
+  - F11
+  - F12
+  - {type: held}
+  - BACKSPACE
+  - ENTER
+  - Gui+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -89,84 +89,84 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
-  - '"'
-  - '7'
-  - '8'
-  - '9'
-  - ':'
-  - +
-  - '['
-  - '%'
-  - '#'
-  - Sft+INTERNATIONAL 1
-  - /
-  - '4'
-  - '5'
-  - '6'
-  - '-'
+  - '&auto_muhenkan DOUBLE_QUOTES'
+  - '&auto_muhenkan N7'
+  - '&auto_muhenkan N8'
+  - '&auto_muhenkan N9'
+  - '&auto_muhenkan COLON'
+  - '&auto_muhenkan PLUS'
+  - '&auto_muhenkan LEFT_BRACKET'
+  - '&auto_muhenkan PERCENT'
+  - '&auto_muhenkan HASH'
+  - '&auto_muhenkan LS(INTERNATIONAL_1)'
+  - '&auto_muhenkan SLASH'
+  - '&auto_muhenkan N4'
+  - '&auto_muhenkan N5'
+  - '&auto_muhenkan N6'
+  - '&auto_muhenkan MINUS'
   - Gui+Sft+S
-  - $
-  - '{'
-  - '&'
-  - '@'
-  - ;
-  - ''''
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - _
+  - '&auto_muhenkan DOUBLE_QUOTES'
+  - '&auto_muhenkan LEFT_BRACE'
+  - '&auto_muhenkan AMPERSAND'
+  - '&auto_muhenkan AT'
+  - '&auto_muhenkan SEMICOLON'
+  - '&auto_muhenkan SQT'
+  - '&auto_muhenkan N0'
+  - '&auto_muhenkan N1'
+  - '&auto_muhenkan N2'
+  - '&auto_muhenkan N3'
+  - '&auto_muhenkan UNDERSCORE'
+  - '&auto_muhenkan DOLLAR'
+  - '&auto_muhenkan COLON'
+  - '&auto_muhenkan EQUAL'
+  - '&auto_muhenkan EXCLAMATION'
+  - '&auto_muhenkan CARET'
+  - '&auto_muhenkan LS(INTERNATIONAL_3)'
+  - '&auto_muhenkan INTERNATIONAL_3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - '='
-  - '!'
-  - ^
-  - Sft+INTERNATIONAL 3
-  - INTERNATIONAL 3
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   ARROW:
-  - ESCAPE
+  - PAGE UP
   - Ctl+Sft+TAB
   - UP ARROW
   - Ctl+TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - PAGE UP
   - Ctl+Sft+TAB
   - UP
   - Ctl+TAB
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - HOME
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
   - END
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - 'Ctl+:'
+  - HOME
   - LEFT
   - DOWN
   - RIGHT
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
+  - END
   - Gui+LEFT ARROW
-  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - LEFT ALT
+  - RIGHT ARROW
   - Gui+RIGHT ARROW
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+LEFT ARROW
-  - {t: ▽, type: trans}
-  - Alt+RIGHT ARROW
-  - {t: ▽, type: trans}
+  - Ctl+-
+  - Gui+LEFT
+  - LEFT ARROW
+  - LEFT ALT
+  - RIGHT ARROW
+  - Gui+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -177,39 +177,39 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   MOUSE:
-  - ESCAPE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+ENTER
+  - {t: ▽, type: trans}
+  - LEFT GUI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - HOME
-  - UP
+  - PAGE DOWN
   - END
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - LEFT
-  - DOWN
-  - RIGHT
-  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
-  - Alt+LEFT SHIFT
-  - {t: ▽, type: trans}
-  - Gui+LEFT ARROW
-  - {t: ▽, type: trans}
-  - Gui+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+LEFT ARROW
   - {t: ▽, type: trans}
-  - AltGr+RIGHT ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - AltGr+RIGHT SHIFT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -231,10 +231,10 @@ layers:
   - Y
   - R
   - W
-  - E
-  - U
-  - I
   - A
+  - I
+  - U
+  - E
   - '-'
   - {t: ▽, type: trans}
   - {t: default, h: toggle}
@@ -265,7 +265,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '6':
-  - {t: ▽, type: trans}
+  - '&strig_test'
   - '7'
   - '8'
   - '9'
@@ -275,7 +275,7 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
+  - '&strig_test'
   - '4'
   - '5'
   - '6'
@@ -308,6 +308,50 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  Scroll:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&auto_muhenkan N7'
+  - '&auto_muhenkan N8'
+  - '&auto_muhenkan N9'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&auto_muhenkan N0'
+  - '&auto_muhenkan N4'
+  - '&auto_muhenkan N5'
+  - '&auto_muhenkan N6'
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&auto_muhenkan N0'
+  - '&auto_muhenkan N1'
+  - '&auto_muhenkan N2'
+  - '&auto_muhenkan N3'
+  - .
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - 'Ctl+:'
+  - Ctl+-
+  - {t: ▽, type: trans}
   numlayer_jis:
   - '*'
   - '7'
@@ -325,7 +369,7 @@ layers:
   - '6'
   - '-'
   - Gui+Sft+S
-  - $
+  - '*'
   - '`'
   - ''''
   - '"'
@@ -336,8 +380,8 @@ layers:
   - '2'
   - '3'
   - '='
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $
+  - +
   - ^
   - '!'
   - '&'
@@ -357,9 +401,46 @@ combos:
   k: TAB
 - p: [12, 13]
   k: Sft+TAB
-- p: [38, 39]
+- p: [38, 37]
   k: Sft+LCTRL
-- p: [30, 31]
-  k: ','
-- p: [32, 33]
-  k: .
+- p: [3, 13]
+  k: '&auto_muhenkan RIGHT_BRACKET'
+  l: [default, '6']
+- p: [4, 14]
+  k: '&auto_muhenkan BACKSLASH'
+  l: [default, '6']
+- p: [5, 17]
+  k: '&auto_muhenkan ASTERISK'
+  l: [default, '6']
+- p: [6, 18]
+  k: '&auto_muhenkan LEFT_PARENTHESIS'
+  l: [default, '6']
+- p: [19, 7]
+  k: '&auto_muhenkan RIGHT_BRACE'
+  l: [default, '6']
+- p: [20, 8]
+  k: '&auto_muhenkan PIPE'
+  l: [default, '6']
+- p: [0, 10]
+  k: '&file_open'
+  l: [FUNCTION]
+- p: [1, 11]
+  k: '&file_close'
+  l: [FUNCTION]
+- p: [2, 12]
+  k: '&scope_open'
+  l: [FUNCTION]
+- p: [3, 13]
+  k: '&scope_close'
+  l: [FUNCTION]
+- p: [0, 10]
+  k: Sft+,
+  l: [default, oonishi]
+- p: [11, 1]
+  k: Sft+.
+  l: [default, oonishi]
+- p: [12, 2]
+  k: Alt+LEFT SHIFT
+  l: [default, oonishi, MOUSE]
+- p: [18, 19]
+  k: ESCAPE
