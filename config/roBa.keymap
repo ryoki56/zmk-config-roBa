@@ -160,6 +160,12 @@
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
         };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <7 19>;
+            layers = <3>;
+        };
     };
 
     macros {
@@ -277,25 +283,25 @@
             bindings = <
 &kp Q                  &kp W         &kp E         &kp R                  &kp T                                                       &kp Y             &kp U  &kp I      &kp O       &kp P
 &kp A                  &kp S         &kp D         &kp F                  &kp G             &kp LG(LS(S))      &to 5                  &kp H             &kp J  &kp K      &kp L       &lt 7 MINUS
-&kp Z                  &kp X         &kp C         &kp V                  &kp B             &kp RCTRL          &lt 7 INTERNATIONAL_4  &kp N             &kp M  &kp COMMA  &kp PERIOD  &lt 1 SLASH
+&kp Z                  &kp X         &kp C         &kp V                  &kp B             &kp RCTRL          &lt 1 INTERNATIONAL_4  &kp N             &kp M  &kp COMMA  &kp PERIOD  &lt 1 SLASH
 &lt_hold 7 LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INTERNATIONAL_5  &lt_hold 2 SPACE  &kp LSHIFT         &lt_hold 2 BACKSPACE   &lt_hold 3 ENTER                                &lt 6 DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        FUNCTION {
+        Shortcut+num {
             bindings = <
-&kp LC(Y)      &kp LC(W)  &kp LC(P)  &kp LC(LS(P))  &kp LC(T)                        &kp F1  &kp F2   &kp F3   &kp F4   &trans
-&kp LC(A)      &kp LC(S)  &kp LC(D)  &kp LC(F)      &kp F12      &trans      &trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp INTERNATIONAL_5
-&kp LC(Z)      &kp LC(X)  &kp LC(C)  &kp LC(V)      &kp LS(F12)  &trans      &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&kp BACKSPACE  &kp ENTER  &kp LG(V)  &trans         &trans       &trans      &trans  &trans                             &trans
+&kp LC(Y)      &kp LC(W)  &kp LC(P)  &kp LC(LS(P))  &kp LC(T)                                           &auto_muhenkan DOUBLE_QUOTES  &auto_muhenkan N7  &auto_muhenkan N8  &auto_muhenkan N9  &auto_muhenkan COLON
+&kp SEMI       &kp LC(S)  &kp LC(D)  &kp LC(F)      &kp F12      &trans      &auto_muhenkan UNDERSCORE  &auto_muhenkan FSLH           &auto_muhenkan N4  &auto_muhenkan N5  &auto_muhenkan N6  &auto_muhenkan MINUS
+&kp LC(Z)      &kp LC(X)  &kp LC(C)  &kp LC(V)      &kp LS(F12)  &trans      &trans                     &auto_muhenkan N0             &auto_muhenkan N1  &auto_muhenkan N2  &auto_muhenkan N3  &auto_muhenkan PERIOD
+&kp BACKSPACE  &kp ENTER  &kp LG(V)  &trans         &trans       &trans      &trans                     &trans                                                                                 &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        NUM {
+        Num+symbol {
             bindings = <
 &auto_muhenkan DOUBLE_QUOTES  &auto_muhenkan N7  &auto_muhenkan N8  &auto_muhenkan N9  &auto_muhenkan COLON                                                                &auto_muhenkan PLUS        &auto_muhenkan LEFT_BRACKET  &auto_muhenkan PERCENT  &auto_muhenkan HASH                 &auto_muhenkan LS(INTERNATIONAL_1)
 &auto_muhenkan SLASH          &auto_muhenkan N4  &auto_muhenkan N5  &auto_muhenkan N6  &auto_muhenkan MINUS       &kp LG(LS(S))              &auto_muhenkan DOUBLE_QUOTES  &auto_muhenkan LEFT_BRACE  &auto_muhenkan AMPERSAND     &auto_muhenkan AT       &auto_muhenkan SEMICOLON            &auto_muhenkan SQT
@@ -339,7 +345,7 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        layer_6 {
+        blu+num {
             bindings = <
 &strig_test  &kp N7        &kp N8        &kp N9        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
 &strig_test  &kp N4        &kp N5        &kp N6        &trans  &trans      &trans       &trans        &bt BT_PRV    &bt BT_NXT    &trans          &trans
@@ -350,12 +356,12 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        Scroll {
+        Scroll+func {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                             &trans             &auto_muhenkan N7  &auto_muhenkan N8  &auto_muhenkan N9  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans         &auto_muhenkan N0  &auto_muhenkan N4  &auto_muhenkan N5  &auto_muhenkan N6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans         &auto_muhenkan N0  &auto_muhenkan N1  &auto_muhenkan N2  &auto_muhenkan N3  &kp PERIOD
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(COLON)  &kp LC(MINUS)                                                               &trans
+&trans  &trans  &trans  &trans  &trans                             &kp F1         &kp F2   &kp F3   &kp F4   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(COLON)  &kp F5         &kp F6   &kp F7   &kp F8   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp MINUS      &kp F9         &kp F10  &kp F11  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(COLON)  &kp LC(MINUS)                             &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
