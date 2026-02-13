@@ -133,9 +133,32 @@
             layers = <0 5 4>;
         };
 
-        escape {
+        escaperight {
             bindings = <&kp ESCAPE>;
+            key-positions = <6 7>;
+        };
+
+        win+tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <9 21>;
+            layers = <0 5 4>;
+        };
+
+        vwinleft {
+            bindings = <&kp LG(LC(LEFT_ARROW))>;
             key-positions = <18 19>;
+            layers = <0 5 4>;
+        };
+
+        vwinright {
+            bindings = <&kp LG(LC(RIGHT_ARROW))>;
+            key-positions = <19 20>;
+            layers = <0 5 4>;
+        };
+
+        escapeleft {
+            bindings = <&kp ESCAPE>;
+            key-positions = <2 3>;
         };
     };
 
