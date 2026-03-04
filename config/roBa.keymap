@@ -136,6 +136,7 @@
         escaperight {
             bindings = <&kp ESCAPE>;
             key-positions = <6 7>;
+            require-prior-idle-ms = <300>;
         };
 
         win+tab {
@@ -159,6 +160,7 @@
         escapeleft {
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
+            require-prior-idle-ms = <300>;
         };
 
         f2 {
@@ -295,7 +297,7 @@
 &kp LC(Y)      &kp LC(W)  &kp LC(P)  &kp LC(LS(P))  &kp LC(T)                                           &auto_muhenkan DOUBLE_QUOTES  &auto_muhenkan N7  &auto_muhenkan N8  &auto_muhenkan N9  &auto_muhenkan COLON
 &kp LC(A)      &kp LC(S)  &kp LC(D)  &kp LC(F)      &kp F12      &trans      &auto_muhenkan UNDERSCORE  &auto_muhenkan FSLH           &auto_muhenkan N4  &auto_muhenkan N5  &auto_muhenkan N6  &auto_muhenkan MINUS
 &kp LC(Z)      &kp LC(X)  &kp LC(C)  &kp LC(V)      &kp LS(F12)  &trans      &trans                     &auto_muhenkan N0             &auto_muhenkan N1  &auto_muhenkan N2  &auto_muhenkan N3  &auto_muhenkan PERIOD
-&kp BACKSPACE  &kp ENTER  &kp LG(V)  &trans         &trans       &trans      &trans                     &trans                                                                                 &trans
+&kp BACKSPACE  &kp ENTER  &kp LG(V)  &trans         &trans       &trans      &trans                     &trans                                                                                 &auto_muhenkan UNDERSCORE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
