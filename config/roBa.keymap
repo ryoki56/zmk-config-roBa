@@ -81,13 +81,13 @@
 
         Left_Brace {
             bindings = <&auto_muhenkan RIGHT_BRACE>;
-            key-positions = <19 7>;
+            key-positions = <8 20>;
             layers = <0 6>;
         };
 
         Right_Brace {
             bindings = <&auto_muhenkan PIPE>;
-            key-positions = <20 8>;
+            key-positions = <9 21>;
             layers = <0 6>;
         };
 
@@ -141,7 +141,7 @@
 
         win+tab {
             bindings = <&kp LG(TAB)>;
-            key-positions = <9 21>;
+            key-positions = <7 19>;
             layers = <0 5 4>;
         };
 
@@ -305,10 +305,10 @@
 
         Num+symbol {
             bindings = <
-&auto_muhenkan DOUBLE_QUOTES  &auto_muhenkan N7  &auto_muhenkan N8  &auto_muhenkan N9  &auto_muhenkan COLON                                                                &auto_muhenkan PLUS        &auto_muhenkan LEFT_BRACKET  &auto_muhenkan PERCENT  &auto_muhenkan HASH                 &auto_muhenkan LS(INTERNATIONAL_1)
-&auto_muhenkan SLASH          &auto_muhenkan N4  &auto_muhenkan N5  &auto_muhenkan N6  &auto_muhenkan MINUS       &kp LG(LS(S))              &auto_muhenkan DOUBLE_QUOTES  &auto_muhenkan LEFT_BRACE  &auto_muhenkan AMPERSAND     &auto_muhenkan AT       &auto_muhenkan SEMICOLON            &auto_muhenkan SQT
-&auto_muhenkan N0             &auto_muhenkan N1  &auto_muhenkan N2  &auto_muhenkan N3  &auto_muhenkan UNDERSCORE  &auto_muhenkan DOLLAR      &auto_muhenkan COLON          &auto_muhenkan EQUAL       &auto_muhenkan EXCLAMATION   &auto_muhenkan CARET    &auto_muhenkan LS(INTERNATIONAL_3)  &auto_muhenkan INTERNATIONAL_3
-&trans                        &trans             &trans             &trans             &trans                     &trans                     &trans                        &trans                                                                                                              &trans
+&auto_muhenkan DOUBLE_QUOTES  &auto_muhenkan N7  &auto_muhenkan N8  &auto_muhenkan N9  &auto_muhenkan COLON                                                                &auto_muhenkan PLUS         &auto_muhenkan LEFT_BRACKET         &auto_muhenkan PERCENT  &auto_muhenkan HASH       &auto_muhenkan LS(INTERNATIONAL_1)
+&auto_muhenkan SLASH          &auto_muhenkan N4  &auto_muhenkan N5  &auto_muhenkan N6  &auto_muhenkan MINUS       &kp LG(LS(S))              &auto_muhenkan DOUBLE_QUOTES  &auto_muhenkan LEFT_BRACE   &auto_muhenkan AMPERSAND            &auto_muhenkan AT       &auto_muhenkan SEMICOLON  &auto_muhenkan SQT
+&auto_muhenkan N0             &auto_muhenkan N1  &auto_muhenkan N2  &auto_muhenkan N3  &auto_muhenkan UNDERSCORE  &auto_muhenkan DOLLAR      &auto_muhenkan COLON          &auto_muhenkan EXCLAMATION  &auto_muhenkan LS(INTERNATIONAL_3)  &auto_muhenkan CARET    &auto_muhenkan EQUAL      &auto_muhenkan INTERNATIONAL_3
+&trans                        &trans             &trans             &trans             &trans                     &trans                     &trans                        &trans                                                                                                            &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -371,10 +371,10 @@
 
         numlayer_jis {
             bindings = <
-&kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS                                    &kp TILDE  &kp AT_SIGN      &kp PERCENT        &kp HASH       &kp UNDERSCORE
-&kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS  &kp LG(LS(S))      &kp ASTERISK  &kp GRAVE  &kp SQT          &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON
-&kp N0        &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp DOLLAR         &kp PLUS      &kp CARET  &kp EXCLAMATION  &kp AMPERSAND      &kp PIPE       &kp BACKSLASH
-&trans        &trans  &trans  &trans  &trans     &trans             &trans        &trans                                                        &trans
+&kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS                                    &kp TILDE        &kp AT_SIGN  &kp PERCENT        &kp HASH       &kp UNDERSCORE
+&kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS  &kp LG(LS(S))      &kp ASTERISK  &kp GRAVE        &kp SQT      &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON
+&kp N0        &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp DOLLAR         &kp PLUS      &kp EXCLAMATION  &kp PIPE     &kp AMPERSAND      &kp CARET      &kp BACKSLASH
+&trans        &trans  &trans  &trans  &trans     &trans             &trans        &trans                                                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
