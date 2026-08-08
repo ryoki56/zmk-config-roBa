@@ -35,7 +35,7 @@ layers:
   - ','
   - .
   - {t: /, h: Shortcut+num}
-  - {t: LEFT SHIFT, h: Scroll+func}
+  - Ctl+Alt+DEL
   - LEFT WIN
   - LEFT ALT
   - {t: INTERNATIONAL 5, h: Shortcut+num}
@@ -87,7 +87,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&auto_muhenkan UNDERSCORE'
   Num+symbol:
   - '&auto_muhenkan DOUBLE_QUOTES'
   - '&auto_muhenkan N7'
@@ -118,10 +118,10 @@ layers:
   - '&auto_muhenkan UNDERSCORE'
   - '&auto_muhenkan DOLLAR'
   - '&auto_muhenkan COLON'
-  - '&auto_muhenkan EQUAL'
   - '&auto_muhenkan EXCLAMATION'
-  - '&auto_muhenkan CARET'
   - '&auto_muhenkan LS(INTERNATIONAL_3)'
+  - '&auto_muhenkan CARET'
+  - '&auto_muhenkan EQUAL'
   - '&auto_muhenkan INTERNATIONAL_3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -131,7 +131,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Ctl+[
   ARROW:
   - PAGE UP
   - Ctl+Sft+TAB
@@ -149,7 +149,7 @@ layers:
   - RIGHT ARROW
   - END
   - {t: ▽, type: trans}
-  - 'Ctl+:'
+  - LEFT WIN
   - HOME
   - LEFT
   - DOWN
@@ -161,7 +161,7 @@ layers:
   - RIGHT ARROW
   - Gui+RIGHT ARROW
   - {t: ▽, type: trans}
-  - Ctl+-
+  - RIGHT ALT
   - Gui+LEFT
   - LEFT ARROW
   - LEFT ALT
@@ -325,7 +325,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - 'Ctl+:'
+  - ':'
   - F5
   - F6
   - F7
@@ -382,10 +382,10 @@ layers:
   - '='
   - $
   - +
-  - ^
   - '!'
-  - '&'
   - '|'
+  - '&'
+  - ^
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -397,9 +397,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [11, 12]
-  k: TAB
 - p: [12, 13]
+  k: TAB
+- p: [12, 11]
   k: Sft+TAB
 - p: [38, 37]
   k: Sft+LCTRL
@@ -415,10 +415,10 @@ combos:
 - p: [6, 18]
   k: '&auto_muhenkan LEFT_PARENTHESIS'
   l: [default, blu+num]
-- p: [19, 7]
+- p: [8, 20]
   k: '&auto_muhenkan RIGHT_BRACE'
   l: [default, blu+num]
-- p: [20, 8]
+- p: [9, 21]
   k: '&auto_muhenkan PIPE'
   l: [default, blu+num]
 - p: [0, 10]
@@ -444,7 +444,8 @@ combos:
   l: [default, oonishi, MOUSE]
 - p: [6, 7]
   k: ESCAPE
-- p: [9, 21]
+  l: [Num+symbol]
+- p: [7, 19]
   k: Gui+TAB
   l: [default, oonishi, MOUSE]
 - p: [18, 19]
@@ -455,6 +456,7 @@ combos:
   l: [default, oonishi, MOUSE]
 - p: [2, 3]
   k: ESCAPE
+  l: [Num+symbol]
 - p: [7, 19]
   k: F2
   l: [ARROW]
