@@ -308,7 +308,7 @@
 &auto_muhenkan DOUBLE_QUOTES  &auto_muhenkan N7  &auto_muhenkan N8  &auto_muhenkan N9  &auto_muhenkan COLON                                                                &auto_muhenkan PLUS         &auto_muhenkan LEFT_BRACKET         &auto_muhenkan PERCENT  &auto_muhenkan HASH       &auto_muhenkan LS(INTERNATIONAL_1)
 &auto_muhenkan SLASH          &auto_muhenkan N4  &auto_muhenkan N5  &auto_muhenkan N6  &auto_muhenkan MINUS       &kp LG(LS(S))              &auto_muhenkan DOUBLE_QUOTES  &auto_muhenkan LEFT_BRACE   &auto_muhenkan AMPERSAND            &auto_muhenkan AT       &auto_muhenkan SEMICOLON  &auto_muhenkan SQT
 &auto_muhenkan N0             &auto_muhenkan N1  &auto_muhenkan N2  &auto_muhenkan N3  &auto_muhenkan UNDERSCORE  &auto_muhenkan DOLLAR      &auto_muhenkan COLON          &auto_muhenkan EXCLAMATION  &auto_muhenkan LS(INTERNATIONAL_3)  &auto_muhenkan CARET    &auto_muhenkan EQUAL      &auto_muhenkan INTERNATIONAL_3
-&trans                        &trans             &trans             &trans             &trans                     &trans                     &trans                        &trans                                                                                                            &trans
+&trans                        &trans             &trans             &trans             &trans                     &trans                     &trans                        &trans                                                                                                            &kp LG(LC(LEFT_BRACKET))
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -317,8 +317,8 @@
         ARROW {
             bindings = <
 &kp PAGE_UP         &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp PAGE_DOWN                                   &kp PAGE_UP   &kp RC(RS(TAB))  &kp UP        &kp RC(TAB)      &kp PAGE_DOWN
-&kp HOME            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END              &trans      &kp LC(COLON)  &kp HOME      &kp LEFT         &kp DOWN      &kp RIGHT        &kp END
-&kp LG(LEFT_ARROW)  &kp LEFT_ARROW   &kp LEFT_ALT    &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)  &trans      &kp LC(MINUS)  &kp LG(LEFT)  &kp LEFT_ARROW   &kp LEFT_ALT  &kp RIGHT_ARROW  &kp LG(RIGHT)
+&kp HOME            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END              &trans      &kp LEFT_WIN   &kp HOME      &kp LEFT         &kp DOWN      &kp RIGHT        &kp END
+&kp LG(LEFT_ARROW)  &kp LEFT_ARROW   &kp LEFT_ALT    &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)  &trans      &kp RIGHT_ALT  &kp LG(LEFT)  &kp LEFT_ARROW   &kp LEFT_ALT  &kp RIGHT_ARROW  &kp LG(RIGHT)
 &trans              &trans           &trans          &trans           &trans               &trans      &trans         &trans                                                        &trans
             >;
 
