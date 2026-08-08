@@ -22,63 +22,63 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: Scroll}
+  - {t: '-', h: Scroll+func}
   - Z
   - X
   - C
   - V
   - B
   - RCTRL
-  - {t: INTERNATIONAL 4, h: Scroll}
+  - {t: INTERNATIONAL 4, h: Shortcut+num}
   - N
   - M
   - ','
   - .
-  - {t: /, h: FUNCTION}
-  - {t: LEFT SHIFT, h: Scroll}
+  - {t: /, h: Shortcut+num}
+  - Ctl+Alt+DEL
   - LEFT WIN
   - LEFT ALT
-  - {t: INTERNATIONAL 5, h: FUNCTION}
-  - {t: SPACE, h: NUM}
+  - {t: INTERNATIONAL 5, h: Shortcut+num}
+  - {t: SPACE, h: Num+symbol}
   - LSHIFT
-  - {t: BACKSPACE, h: NUM}
+  - {t: BACKSPACE, h: Num+symbol}
   - {t: ENTER, h: ARROW}
-  - {t: DELETE, h: '6'}
-  FUNCTION:
+  - {t: DELETE, h: blu+num}
+  Shortcut+num:
   - Ctl+Y
   - Ctl+W
   - Ctl+P
   - Ctl+Sft+P
   - Ctl+T
-  - F1
-  - F2
-  - F3
-  - F4
-  - {t: ▽, type: trans}
+  - '&auto_muhenkan DOUBLE_QUOTES'
+  - '&auto_muhenkan N7'
+  - '&auto_muhenkan N8'
+  - '&auto_muhenkan N9'
+  - '&auto_muhenkan COLON'
   - Ctl+A
   - Ctl+S
   - Ctl+D
   - Ctl+F
   - F12
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F5
-  - F6
-  - F7
-  - F8
-  - INTERNATIONAL 5
+  - '&auto_muhenkan UNDERSCORE'
+  - '&auto_muhenkan FSLH'
+  - '&auto_muhenkan N4'
+  - '&auto_muhenkan N5'
+  - '&auto_muhenkan N6'
+  - '&auto_muhenkan MINUS'
   - Ctl+Z
   - Ctl+X
   - Ctl+C
   - Ctl+V
   - Sft+F12
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F9
-  - F10
-  - F11
-  - F12
   - {type: held}
+  - '&auto_muhenkan N0'
+  - '&auto_muhenkan N1'
+  - '&auto_muhenkan N2'
+  - '&auto_muhenkan N3'
+  - '&auto_muhenkan PERIOD'
   - BACKSPACE
   - ENTER
   - Gui+V
@@ -87,8 +87,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  NUM:
+  - '&auto_muhenkan UNDERSCORE'
+  Num+symbol:
   - '&auto_muhenkan DOUBLE_QUOTES'
   - '&auto_muhenkan N7'
   - '&auto_muhenkan N8'
@@ -118,10 +118,10 @@ layers:
   - '&auto_muhenkan UNDERSCORE'
   - '&auto_muhenkan DOLLAR'
   - '&auto_muhenkan COLON'
-  - '&auto_muhenkan EQUAL'
   - '&auto_muhenkan EXCLAMATION'
-  - '&auto_muhenkan CARET'
   - '&auto_muhenkan LS(INTERNATIONAL_3)'
+  - '&auto_muhenkan CARET'
+  - '&auto_muhenkan EQUAL'
   - '&auto_muhenkan INTERNATIONAL_3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -131,7 +131,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Ctl+[
   ARROW:
   - PAGE UP
   - Ctl+Sft+TAB
@@ -149,7 +149,7 @@ layers:
   - RIGHT ARROW
   - END
   - {t: ▽, type: trans}
-  - 'Ctl+:'
+  - LEFT WIN
   - HOME
   - LEFT
   - DOWN
@@ -161,7 +161,7 @@ layers:
   - RIGHT ARROW
   - Gui+RIGHT ARROW
   - {t: ▽, type: trans}
-  - Ctl+-
+  - RIGHT ALT
   - Gui+LEFT
   - LEFT ARROW
   - LEFT ALT
@@ -264,7 +264,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '6':
+  blu+num:
   - '&strig_test'
   - '7'
   - '8'
@@ -308,28 +308,28 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  Scroll:
+  Scroll+func:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&auto_muhenkan N7'
-  - '&auto_muhenkan N8'
-  - '&auto_muhenkan N9'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&auto_muhenkan N0'
-  - '&auto_muhenkan N4'
-  - '&auto_muhenkan N5'
-  - '&auto_muhenkan N6'
+  - ':'
+  - F5
+  - F6
+  - F7
+  - F8
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -337,12 +337,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '-'
+  - F9
+  - F10
+  - F11
+  - F12
   - {t: ▽, type: trans}
-  - '&auto_muhenkan N0'
-  - '&auto_muhenkan N1'
-  - '&auto_muhenkan N2'
-  - '&auto_muhenkan N3'
-  - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -382,10 +382,10 @@ layers:
   - '='
   - $
   - +
-  - ^
   - '!'
-  - '&'
   - '|'
+  - '&'
+  - ^
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -397,42 +397,42 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [11, 12]
-  k: TAB
 - p: [12, 13]
+  k: TAB
+- p: [12, 11]
   k: Sft+TAB
 - p: [38, 37]
   k: Sft+LCTRL
 - p: [3, 13]
   k: '&auto_muhenkan RIGHT_BRACKET'
-  l: [default, '6']
+  l: [default, blu+num]
 - p: [4, 14]
   k: '&auto_muhenkan BACKSLASH'
-  l: [default, '6']
+  l: [default, blu+num]
 - p: [5, 17]
   k: '&auto_muhenkan ASTERISK'
-  l: [default, '6']
+  l: [default, blu+num]
 - p: [6, 18]
   k: '&auto_muhenkan LEFT_PARENTHESIS'
-  l: [default, '6']
-- p: [19, 7]
+  l: [default, blu+num]
+- p: [8, 20]
   k: '&auto_muhenkan RIGHT_BRACE'
-  l: [default, '6']
-- p: [20, 8]
+  l: [default, blu+num]
+- p: [9, 21]
   k: '&auto_muhenkan PIPE'
-  l: [default, '6']
+  l: [default, blu+num]
 - p: [0, 10]
   k: '&file_open'
-  l: [FUNCTION]
+  l: [Shortcut+num]
 - p: [1, 11]
   k: '&file_close'
-  l: [FUNCTION]
+  l: [Shortcut+num]
 - p: [2, 12]
   k: '&scope_open'
-  l: [FUNCTION]
+  l: [Shortcut+num]
 - p: [3, 13]
   k: '&scope_close'
-  l: [FUNCTION]
+  l: [Shortcut+num]
 - p: [0, 10]
   k: Sft+,
   l: [default, oonishi]
@@ -442,5 +442,21 @@ combos:
 - p: [12, 2]
   k: Alt+LEFT SHIFT
   l: [default, oonishi, MOUSE]
-- p: [18, 19]
+- p: [6, 7]
   k: ESCAPE
+  l: [Num+symbol]
+- p: [7, 19]
+  k: Gui+TAB
+  l: [default, oonishi, MOUSE]
+- p: [18, 19]
+  k: Gui+Ctl+LEFT ARROW
+  l: [default, oonishi, MOUSE]
+- p: [19, 20]
+  k: Gui+Ctl+RIGHT ARROW
+  l: [default, oonishi, MOUSE]
+- p: [2, 3]
+  k: ESCAPE
+  l: [Num+symbol]
+- p: [7, 19]
+  k: F2
+  l: [ARROW]
